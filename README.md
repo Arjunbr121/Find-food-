@@ -1,4 +1,4 @@
-# Restarent-app
+# Find-food
 
 Restuarant application which includes all CRUD features
 
