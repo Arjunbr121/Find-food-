@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <title>The Restaurent </title>
+    <link rel="stylesheet" href="css/index.css">
+</head> 
+<body>
+    <div class="hero">
+        <div class="form-box">
+         <p>Hi mate : ) , want to check out our products do login if u have an account or else register fast.....!</p> 
+            <div class="button-box">
+                
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn"onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+            <a target="_blank" href="https://www.facebook.com"><img src="../../images/fb1.png" ></a>
+            <a target="_blank" href="https://www.twitter.com"><img src="../../images/tw1.png" target="href:www.twitter.com"></a>
+            <a target="_blank" href="https://www.google.com"><img src="../../images/gp1.png" target="href:www.google.com"></a>
+        </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="password" class="input-field" placeholder="Enter Password" minlength="8" required >
+                <input type="checkbox" class="checkbox" ><span>Remember Password</span>
+                <button type="submit" class="submit-btn" >Log In</button>
+            </form>
+            <form  id="register"class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="password" class="input-field" placeholder="Enter Password" minlength="8" required>
+                <input type="text" class="input-field" placeholder="EMail Id" required>
+                <input type="checkbox" class="checkbox" ><span>I agree to the terms and condition</span>
+                <button type="submit" class="submit-btn" >Register</button>
+            </form>
+    </div>
+</div>
+    <script src="javascript/index.js">
+    </script>
+</body>
+</html>
