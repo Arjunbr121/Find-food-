@@ -11,8 +11,14 @@ app.set("view engine", "ejs")
 app.use(express.static('public'))
 app.use(express.urlencoded({extended:true}))
 
-
+app.get("/", (req, res) =>{
+    res.redirect("/home")
+})
 app.get("/home", (req, res) =>{
+    res.render('indexpage/home_page.ejs');
+})
+
+app.get("/index", (req, res) =>{
     console.log("got request")
     res.render('login/index.ejs');
 })
