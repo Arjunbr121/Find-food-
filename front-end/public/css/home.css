@@ -96,6 +96,7 @@ header{
     border-radius: 10px;
     box-shadow: 0 1px 2px gray;
     background-color: rgb(243,243,243);
+    transition:all 0.25s 0s ease-in-out;
 }
 .box img{
     width: 100%;
@@ -201,5 +202,14 @@ header{
 .box:hover{
     transform: scale(1.1);
     background:rgb(65, 65, 110);
-    box-shadow: 15px;
+    box-shadow: 10px 15px 5px 2px grey;
+}
+
+.country{
+    cursor:pointer;
+    transition: all 0.3s 0s ease-in-out;
+}
+.country:hover{
+    background-color: rgb(4, 4, 66);
+    color:white;
 }
