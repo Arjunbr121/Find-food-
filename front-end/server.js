@@ -22,3 +22,7 @@ app.get("/index", (req, res) =>{
     console.log("got request")
     res.render('login/index.ejs');
 })
+app.get("/food", (req, res) =>{
+    console.log("got request")
+    res.render('page_1/page_1.ejs');
+})
