@@ -1,9 +1,21 @@
 const express = require('express')
 const app = express()
+require('dotenv').config()
+
+const loginRouter = require('./Routers/loginRouter.js');
+const foodRouter = require('./Routers/FoodRouter/foodRouter.js');
+const registerRouter = require("./Routers/RegisterRouter/registerUser.js")
+console.log(process.env.PORT)
+const PORT = process.env.PORT || 3000;
+
+app.use(express.urlencoded({extended:true}));
+app.use("/login", loginRouter);
+app.use("/food", foodRouter);
+app.use("/register", registerRouter);
 
 
-app.listen(2500, (req, res) =>{
-    console.log("Backend node server is running!");
+app.listen(PORT, async (req, res) =>{
+    console.log(`Backend node server is running at PORT ${PORT}!`);
 })
 
 app.get("/developers", (req, res) =>{
