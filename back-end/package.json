@@ -4,12 +4,17 @@
   "description": "Back-end server for Find-Food application built using node.js and mongo db as database",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Hrithik R, Arjun",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "mongoose": "^6.9.0"
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.9.0",
+    "mysql": "^2.18.1"
   }
 }
