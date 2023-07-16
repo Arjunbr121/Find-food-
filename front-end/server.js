@@ -26,3 +26,7 @@ app.get("/food", (req, res) =>{
     console.log("got request")
     res.render('page_1/page_1.ejs');
 })
+
+app.get("/contentPage", (req, res) => {
+    res.render("contentPage/index.ejs")
+})
