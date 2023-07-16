@@ -8,9 +8,10 @@ const registerRouter = require("./Routers/RegisterRouter/registerUser.js")
 console.log(process.env.PORT)
 const PORT = process.env.PORT || 3000;
 
-app.use(express.urlencoded({extended:true}));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 app.use("/login", loginRouter);
-app.use("/food", foodRouter);
+app.use("/foods", foodRouter);
 app.use("/register", registerRouter);
 
 
