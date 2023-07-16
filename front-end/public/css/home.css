@@ -213,3 +213,6 @@ header{
     background-color: rgb(4, 4, 66);
     color:white;
 }
+a:hover{
+    color: black;
+}
