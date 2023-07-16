@@ -6,7 +6,7 @@
 .hero{
     height: 100%;
     width: 100%;
-    background-image: url('../images/banner2.jpg');
+    background-image: url('/front-end/public/images/banner2.jpg');
     background-position: center;
     background-size: cover;
     position: absolute;
@@ -78,6 +78,7 @@
 }
 .submit-btn{
     width:85%;
+    ;
     padding:10px 30px;
     display:block;
     margin:auto;
