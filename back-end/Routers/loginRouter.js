@@ -8,7 +8,7 @@ const responseObject = {status: "success", code : 200, errMsg:""}
 
 Router.route("/")
         .post(async (req, res) =>{
-            console.log("here")
+
             const {username, email, password} = req.body;
             let user = await findOneUser(username, email);
             user = JSON.parse(JSON.stringify(user[0]));
